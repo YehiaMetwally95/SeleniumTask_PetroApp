@@ -41,7 +41,7 @@
 - Workflow that run API Tests Remotely In Parallel
   - Check Generated Allure Report from this link https://drive.google.com/drive/folders/18GAlea8un83F6UAWodqvMiLZAxIj4jmV?usp=sharing
 - Workflow that run UI Tests Remotely In Parallel Across Different Browsers, Check Allure Report from below link
-  - Check Generated Allure Report from this link 
+  - Check Generated Allure Report from this link https://drive.google.com/drive/folders/1rPo6JhvuphWRaWuW9wmZZLnMJt8WgMYw?usp=sharing
 - Workflow that run All Tests Remotely In Sequence
   - Check Generated Allure Report from this link https://drive.google.com/drive/folders/1r_usZRxIdsiOelBKLoRgn4FQb0aWvbDc?usp=sharing
 - Run Workflows on Different Triggers: after every Push, after every Pull Request and Manually
