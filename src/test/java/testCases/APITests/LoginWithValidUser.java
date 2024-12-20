@@ -2,10 +2,8 @@ package testCases.APITests;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import objectModelsForAPIs.LoginRequestModel;
-import objectModelsForAPIs.LoginResponseModel;
 import org.testng.annotations.Test;
 import yehiaEngine.managers.JsonManager;
-import yehiaEngine.managers.SessionManager;
 
 public class LoginWithValidUser {
     //Variables:

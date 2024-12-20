@@ -2,13 +2,9 @@ package testCases.APITests;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import objectModelsForAPIs.FetchCarsRequestModel;
-import objectModelsForAPIs.FetchCarsResponseModel;
-import objectModelsForAPIs.LoginRequestModel;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import yehiaEngine.managers.JsonManager;
-
-import java.lang.annotation.Target;
 
 public class GetAllUserCars {
     //Variables:
