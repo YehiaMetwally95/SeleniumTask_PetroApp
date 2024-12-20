@@ -29,6 +29,6 @@ public class BaseTest {
     public void closeBrowser()
     {
         //Close All Browser Tabs
-        closeAllWindows(getDriver(isolatedDriver));
+     //   closeAllWindows(getDriver(isolatedDriver));
     }
 }

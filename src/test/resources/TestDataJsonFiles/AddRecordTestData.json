@@ -1,0 +1,34 @@
+{
+  "FirstRecord": {
+    "CarNumber": "12345",
+    "FuelAmount": "30",
+    "FuelCost": "10",
+    "FuelType": "Diesel",
+    "Date": "11/11/2021",
+    "Time": "05:30PM",
+    "CustomerID": "A100200300"
+  },
+  "SecondRecord": {
+    "CarNumber": "3922023",
+    "FuelAmount": "20",
+    "FuelCost": "8",
+    "FuelType": "Natural Gas",
+    "Date": "12/08/2024",
+    "Time": "11:01PM",
+    "CustomerID": "3922709"
+  },
+  "Headers": {
+    "FuelTrackerPage": "Car Fuel Consumption Tracker",
+    "CreationForm": "Add Record"
+  },
+  "FuelTypes": [
+    "Diesel",
+    "Gasoline",
+    "Ethanol",
+    "Electric",
+    "Natural Gas",
+    "Hybrid",
+    "CNG",
+    "Hydrogen"
+  ]
+}

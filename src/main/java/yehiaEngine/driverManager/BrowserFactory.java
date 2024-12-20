@@ -93,6 +93,7 @@ public class BrowserFactory {
         ChromeOptions option = new ChromeOptions();
         option.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         option.addArguments("--start-maximized");
+        option.setAcceptInsecureCerts(true);
         if (executionType.equalsIgnoreCase("LocalHeadless") || executionType.equalsIgnoreCase("Remote"))
             option.addArguments("--headless");
 
@@ -104,6 +105,7 @@ public class BrowserFactory {
         EdgeOptions option = new EdgeOptions();
         option.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         option.addArguments("--start-maximized");
+        option.setAcceptInsecureCerts(true);
         if (executionType.equalsIgnoreCase("LocalHeadless") || executionType.equalsIgnoreCase("Remote"))
             option.addArguments("--headless");
 
@@ -114,6 +116,7 @@ public class BrowserFactory {
     {
         FirefoxOptions option = new FirefoxOptions();
         option.addArguments("--start-minimized");
+        option.setAcceptInsecureCerts(true);
         if (executionType.equalsIgnoreCase("LocalHeadless") || executionType.equalsIgnoreCase("Remote"))
             option.addArguments("--headless");
 

@@ -42,6 +42,22 @@ public class WebElementsActions {
         return this;
     }
 
+    // Clear TextBox then Typing on it & Log Typing Action
+    public WebElementsActions typeDateTime (By locator , String text) {
+        //Locate Element and Check if its present on DOM
+        locateElement(driver,locator);
+        //Check if Element is Displayed and Visible on Page
+        checkElementDisplayed(driver,locator);
+        //Get Element AccessibleName
+        String elementName = getElementName(driver,locator);
+        //Check if Element is Enabled on Page (Not Disabled)
+        checkElementEnabled(driver,locator,elementName);
+        //Take Action on Element
+        clearText(driver,locator,elementName);
+        writeTextDateTime(driver,locator,elementName,text);
+        return this;
+    }
+
     //Pressing on Button or Link & Log CLicking Action
     public WebElementsActions press(By locator) {
         //Locate Element and Check if its present on DOM
@@ -250,6 +266,13 @@ public class WebElementsActions {
             LogHelper.logErrorStep("Cannot Retrieve All Matched Elements from the Element located by " + locator,e);
             return null;
         }
+    }
+
+    //Press on Keyboard Keys
+    public WebElementsActions pressOnKey(By locator,CharSequence... keys)
+    {
+        new Actions(driver).sendKeys(driver.findElement(locator),keys).perform();
+        return this;
     }
 
     /**
