@@ -45,5 +45,5 @@ jobs:
       - name: Upload Allure Report
         uses: actions/upload-artifact@v4
         with:
-          name: Allure Report API Tests Chrome Ubuntu
+          name: Allure Report API Tests
           path: "target/site/allure-maven-plugin"
