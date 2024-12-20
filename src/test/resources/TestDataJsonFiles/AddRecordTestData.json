@@ -9,13 +9,13 @@
     "CustomerID": "A100200300"
   },
   "SecondRecord": {
-    "CarNumber": "3922023",
-    "FuelAmount": "20",
-    "FuelCost": "8",
+    "CarNumber": "3851412",
+    "FuelAmount": "17",
+    "FuelCost": "6",
     "FuelType": "Natural Gas",
-    "Date": "12/08/2024",
-    "Time": "11:01PM",
-    "CustomerID": "3922709"
+    "Date": "11/24/2024",
+    "Time": "04:10PM",
+    "CustomerID": "3851440"
   },
   "Headers": {
     "FuelTrackerPage": "Car Fuel Consumption Tracker",

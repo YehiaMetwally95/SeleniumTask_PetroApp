@@ -1,0 +1,94 @@
+{
+  "Admin": {
+    "UserID": "0",
+    "Username": "admin",
+    "Password": "adminpass",
+    "Cars": [
+      {
+        "car_id": "101",
+        "make": "Toyota",
+        "model": "Camry",
+        "year": "2018"
+      },
+      {
+        "car_id": "102",
+        "make": "Honda",
+        "model": "Accord",
+        "year": "2019"
+      },
+      {
+        "car_id": "201",
+        "make": "Ford",
+        "model": "Mustang",
+        "year": "2017"
+      },
+      {
+        "car_id": "202",
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "year": "2020"
+      }
+    ]
+  },
+
+  "User1": {
+    "UserID": "1",
+    "Username": "user1",
+    "Password": "password123",
+    "Cars": [
+      {
+        "car_id": "101",
+        "make": "Toyota",
+        "model": "Camry",
+        "year": "2018"
+      },
+      {
+        "car_id": "102",
+        "make": "Honda",
+        "model": "Accord",
+        "year": "2019"
+      }
+    ]
+  },
+
+  "User2": {
+    "UserID": "2",
+    "Username": "user2",
+    "Password": "password456",
+    "Cars": [
+      {
+        "car_id": "201",
+        "make": "Ford",
+        "model": "Mustang",
+        "year": "2017"
+      },
+      {
+        "car_id": "202",
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "year": "2020"
+      }
+    ]
+  },
+
+  "Statuses": {
+    "LoginSuccess": "success",
+    "LoginFailure": "error",
+    "FetchCarsSuccess": "success",
+    "FetchCarsFailure": "error"
+  },
+
+  "Messages": {
+    "LoginSuccess": null,
+    "LoginFailure": "Invalid username or password",
+    "FetchCarsSuccess": null,
+    "FetchCarsFailure": "Invalid session ID"
+  },
+
+  "ResponseCodes": {
+    "LoginSuccess": "200",
+    "LoginFailure": "200",
+    "FetchCarsSuccess": "200",
+    "FetchCarsFailure": "200"
+  }
+}

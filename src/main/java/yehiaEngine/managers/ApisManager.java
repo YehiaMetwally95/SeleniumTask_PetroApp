@@ -112,6 +112,11 @@ public class ApisManager {
             request = request.header("x-auth-token",token);
         }
 
+        else if(authType.equalsIgnoreCase("Session-ID"))
+        {
+            request = request.header("Session-ID",token);
+        }
+
         switch (requestType)
         {
             case "Post":
@@ -207,6 +212,11 @@ public class ApisManager {
             request = request.header("x-auth-token",token);
         }
 
+        else if(authType.equalsIgnoreCase("Session-ID"))
+        {
+            request = request.header("Session-ID",token);
+        }
+
         response = request.when().get(endpoint);
         logInfoStep("Sending Auth Get Request for URL ["+endpoint+"]");
 
@@ -236,14 +246,19 @@ public class ApisManager {
         return response.jsonPath().getInt(jsonPath);
     }
 
-    public static String getJsonStringValuefromResponse(Response response, String jsonPath)
+    public static String getJsonStringValueFromResponse(Response response, String jsonPath)
     {
         return response.jsonPath().getString(jsonPath);
     }
 
-    public static JsonObject getJsonObjectfromResponse(Response response, String jsonPath)
+    public static JsonObject getJsonObjectFromResponse(Response response, String jsonPath)
     {
         return response.jsonPath().getJsonObject(jsonPath);
+    }
+
+    public static List<Object> getListOfObjectsFromResponse(Response response, String jsonPath)
+    {
+        return response.jsonPath().getList(jsonPath);
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////

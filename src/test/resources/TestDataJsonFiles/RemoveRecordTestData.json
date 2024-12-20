@@ -9,13 +9,13 @@
     "CustomerID": "A100200300"
   },
   "SecondRecord": {
-    "CarNumber": "1540195",
-    "FuelAmount": "22",
-    "FuelCost": "9",
+    "CarNumber": "3713413",
+    "FuelAmount": "19",
+    "FuelCost": "5",
     "FuelType": "Electric",
-    "Date": "11/09/2024",
-    "Time": "09:40PM",
-    "CustomerID": "1541511"
+    "Date": "12/09/2024",
+    "Time": "01:57PM",
+    "CustomerID": "3713715"
   },
   "Headers": {
     "FuelTrackerPage": "Car Fuel Consumption Tracker",

@@ -1,12 +1,10 @@
-package testCases;
+package testCases.UITests;
 
 import baseTest.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.AddRecordPage;
 import yehiaEngine.managers.JsonManager;
-
-import java.util.List;
 
 import static pages.AddRecordPage.*;
 import static yehiaEngine.utilities.RandomDataGenerator.*;
@@ -25,7 +23,7 @@ public class AddNewRecordWithRandomData extends BaseTest {
                 .setData("SecondRecord.CarNumber",generateUniqueInteger())
                 .setData("SecondRecord.FuelAmount",getRandomFuelAmount())
                 .setData("SecondRecord.FuelCost",getRandomFuelCost())
-                .setData("SecondRecord.FuelType", generateItemFromList(json.getDataAsJsonArray("FuelTypes").asList()).getAsString())
+                .setData("SecondRecord.FuelType", generateItemFromList(json.getDataAsListOfObjects("FuelTypes")).toString())
                 .setData("SecondRecord.Date",getRandomDate())
                 .setData("SecondRecord.Time",getRandomTime())
                 .setData("SecondRecord.CustomerID",generateUniqueInteger());

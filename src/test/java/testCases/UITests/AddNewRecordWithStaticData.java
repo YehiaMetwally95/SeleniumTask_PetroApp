@@ -1,4 +1,4 @@
-package testCases;
+package testCases.UITests;
 
 import baseTest.BaseTest;
 import org.testng.annotations.Test;

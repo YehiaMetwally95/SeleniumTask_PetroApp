@@ -1,4 +1,4 @@
-package testCases;
+package testCases.UITests;
 
 import baseTest.BaseTest;
 import org.testng.annotations.BeforeMethod;
@@ -24,7 +24,7 @@ public class RemoveExistingRecord extends BaseTest {
                 .setData("SecondRecord.CarNumber",generateUniqueInteger())
                 .setData("SecondRecord.FuelAmount",getRandomFuelAmount())
                 .setData("SecondRecord.FuelCost",getRandomFuelCost())
-                .setData("SecondRecord.FuelType", generateItemFromList(json.getDataAsJsonArray("FuelTypes").asList()).getAsString())
+                .setData("SecondRecord.FuelType", generateItemFromList(json.getDataAsListOfObjects("FuelTypes")).toString())
                 .setData("SecondRecord.Date",getRandomDate())
                 .setData("SecondRecord.Time",getRandomTime())
                 .setData("SecondRecord.CustomerID",generateUniqueInteger());

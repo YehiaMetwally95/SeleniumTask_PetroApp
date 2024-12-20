@@ -1,4 +1,4 @@
-package testCases;
+package testCases.UITests;
 
 import baseTest.BaseTest;
 import org.testng.annotations.BeforeMethod;
@@ -6,10 +6,7 @@ import org.testng.annotations.Test;
 import pages.AddRecordPage;
 import yehiaEngine.managers.JsonManager;
 
-import static pages.AddRecordPage.*;
 import static yehiaEngine.driverManager.BrowserFactory.getDriver;
-import static yehiaEngine.utilities.RandomDataGenerator.generateItemFromList;
-import static yehiaEngine.utilities.RandomDataGenerator.generateUniqueInteger;
 
 public class RemoveMultipleRecords extends BaseTest {
     //Variables
