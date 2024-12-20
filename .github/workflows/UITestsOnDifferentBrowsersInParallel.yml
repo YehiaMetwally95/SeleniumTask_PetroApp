@@ -99,7 +99,7 @@ jobs:
         run: >
           mvn clean test -Dtest="testCases.UITests.AddMultipleRecordsWithRandomData,
           testCases.UITests.AddNewRecordWithStaticData,
-          testCases.UITests.RemoveMultipleRecords,
+          testCases.UITests.RemoveMultipleRecords"
           -DexecutionType="Remote"
           -DbrowserType="Edge"
           -DisHeadless="true"
@@ -159,7 +159,7 @@ jobs:
           testCases.UITests.AddNewRecordWithStaticData,
           testCases.UITests.RemoveMultipleRecords,
           testCases.UITests.AddNewRecordWithRandomData,
-          testCases.UITests.RemoveExistingRecord,
+          testCases.UITests.RemoveExistingRecord"
           -DexecutionType="Remote"
           -DbrowserType="Firefox"
           -DisHeadless="true"
