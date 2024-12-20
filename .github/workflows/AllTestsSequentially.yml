@@ -2,6 +2,9 @@ name: All Tests Sequentially
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - master
