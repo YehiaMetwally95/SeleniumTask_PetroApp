@@ -74,8 +74,5 @@ public class MethodListeners implements IInvokedMethodListener , IConfigurationL
                 throw new RuntimeException(e);
             }
         }
-        //Remove All Drivers from Context Attributes
-        context.removeAttribute("isolatedWebDriver");
-        context.removeAttribute("isolatedAppiumDriver");
     }
 }
